@@ -1,13 +1,84 @@
 .container {
     height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #6e6f70;
+    padding: 0;
+    margin: 0;
+}
+
+#botoes {
+    margin-top: 6%;
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+}
+
+.button {
+    width: 75px;
+    height: 64px;
+    font-size: 30px;
+    background: #aeadad;
+    color: #fff;
+    border: 1px solid #515151;
+    box-shadow: inset 1px 0px 1px 3px #c3c2c2;
+}
+
+.carcaca {
+    width: 300px;
+    display: flex;
+    flex-flow: column;
+    height: 380px;
+    border: 1px solid black;
+    background: #5f5f5f;
+    border-radius: 21px;
+    padding: 20px;
+}
+
+.box {
+}
+
+#visor {
+    height: 28px;
+    background: #538d53;
+    font-size: 25px;
+    text-align: right;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 10px;
+}
+
+.tela {
+    width: 95%;
+    background: #747272;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2%;
 }
 
 .columns {
-    height: 100%;
-    margin: 0;
+    display: flex;
+    width: 300px;
 }
-body {
-    background-color: #2366d1;
-    padding: 0;
-    margin: 0;
+
+.column {
+}
+
+#CE {
+    background: #dc5757;
+    box-shadow: inset 1px 0px 1px 2px #de6b6b;
+    border: 1px solid #dc5757;
+}
+
+#cardeno {
+    width: 320px;
+    height: 390px;
+    background: white;
+    margin-left: 40px;
+    box-shadow: 10px 10px 10px #404040;
 }

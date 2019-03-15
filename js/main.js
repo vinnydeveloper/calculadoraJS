@@ -1,16 +1,14 @@
 
 const botoesNumericos = document.querySelectorAll('.numerico');
 const botoesOperacoes = document.querySelectorAll('.operacao');
-
-console.log(botoesNumericos)
+let cardeno = document.getElementById('cardeno');
+console.log(cardeno)
 let jaTemOperador = false;
 let exibiuResultado = false
-
 const visor = document.getElementById('visor');
 function adicionarEventoDeClique (elemento, funcao) {
     elemento.onclick = funcao
   }
-
   function ClicarNoNumero () {
     const numeroClicado = this.textContent
     const valorNoVisor = visor.textContent
@@ -30,26 +28,23 @@ function adicionarEventoDeClique (elemento, funcao) {
         resultado()
         return
     }
-    
+
     if(operacaoClicado === "CE"){
         visor.textContent = ""
         return
     }
-
-    
     novoValor = valorNoVisor + operacaoClicado
     visor.textContent = novoValor
 
   }
-
   function resultado(){
+   
     const resultado = eval(visor.textContent)
-    console.log(resultado)
     visor.textContent =  resultado
     exibiuResultado = true
     jaTemOperador = false // zera a variavel para recomeçar
   }
-  
+
   botoesOperacoes.forEach(elemento =>
     adicionarEventoDeClique(elemento, ClicarNaOperacao)
   ) 
