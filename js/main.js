@@ -51,3 +51,14 @@ function adicionarEventoDeClique (elemento, funcao) {
   botoesNumericos.forEach(elemento =>
     adicionarEventoDeClique(elemento, ClicarNoNumero)
   )
+
+  let arr = [
+    0,
+    9,
+    8,
+  ]
+
+  for (const elem of arr) {
+    const num = elem + 9
+    console.log(num)
+  }
